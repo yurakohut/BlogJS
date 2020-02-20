@@ -9,7 +9,7 @@ import {
 } from '../core/validators';
 import {
     apiService
-} from '../services/api.server';
+} from '../services/api.service';
 
 export class CreateComponent extends Component {
     constructor(id) {

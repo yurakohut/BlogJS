@@ -8,15 +8,17 @@ export class HeaderComponent extends Component {
     };
 
     init() {
-        if (localStorage.getItem('visited')) {
+        if (sessionStorage.getItem('visited')) {
             this.hide();
-        }
+            this.$mainPaige.classList.remove('hide');
+        };
         const btn = this.$el.querySelector('.js-header-start');
         btn.addEventListener('click', buttonHandler.bind(this));
     };
 };
 
 function buttonHandler() {
-    localStorage.setItem('visited', JSON.stringify(true));
+    sessionStorage.setItem('visited', JSON.stringify(true));
+    this.$mainPaige.classList.remove('hide');
     this.hide();
 };

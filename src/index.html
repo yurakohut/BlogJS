@@ -16,12 +16,15 @@
 
 <body>
   <header id="header">
-    <h1 class="title">БЛОГ</h1>
-    <h2 class="subtitle">Створюй статті та додавай їх у вибране</h2>
-    <button class="get-started button button-primary button-large js-header-start">Почати</button>
+    <div class="header-text">
+      <h1 class="title">БЛОГ</h1>
+      <h2 class="subtitle">Створюй статті та додавай їх у вибране</h2>
+      <button class="get-started button button-primary button-large js-header-start">Почати</button>
+    </div>
+
   </header>
 
-  <section class="container w-container">
+  <section class="container w-container main-paige hide">
     <ul class="tabs" id="navigation">
       <li><a class="tab " href="#" data-name="posts">Пости</a></li>
       <li><a class="tab active" href="#" data-name="create">Створити</a></li>
@@ -58,22 +61,7 @@
 
       <button class="button-primary button-round button-shadow" type="submit">Створити</button>
     </form>
-    <div id="posts" class="hide">
-      <div class="panel">
-        <div class="panel-head">
-          <p class="panel-title">Назва посту</p>
-          <ul class="tags">
-            <li class="tag tag-blue tag-rounded">Новина</li>
-          </ul>
-        </div>
-        <div class="panel-body">
-          <p class="multi-line">Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="panel-footer w-panel-footer">
-          <small>11.02.20</small>
-        </div>
-      </div>
-    </div>
+    <div id="posts" class="hide"></div>
     <div id="favorite" class="hide"></div>
 
   </section>

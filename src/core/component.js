@@ -1,15 +1,22 @@
 export class Component {
     constructor(id) {
         this.$el = document.getElementById(id);
+        this.$mainPaige = document.querySelector('.main-paige')
         this.init();
     };
     init() {};
 
-    hide(){
+    onShow() {};
+
+    onHide() {};
+
+    hide() {
         this.$el.classList.add('hide');
+        this.onHide();
     };
 
-    show(){
+    show() {
         this.$el.classList.remove('hide');
+        this.onShow();
     };
 };
